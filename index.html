@@ -8,7 +8,27 @@
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-    
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+        <div class="controls__range">
+            <input type="range" id="jsRange" min="0.1" max="5.0" value="2.5" steps="0.1">
+        </div>
+        <div id="jsMode" class="controls__btns">
+            <button id="jsFillBtn">FILL</button>
+            <button id="jsPaintBtn">SAVE</button>
+        </div>
+        <div class="controls__colors" id="jsColor">
+            <div class="controls__color" style="background-color: #b6b6b6"></div>
+            <div class="controls__color" style="background-color: #e6261f"></div>
+            <div class="controls__color" style="background-color: #eb7532"></div>
+            <div class="controls__color" style="background-color: #f7d038"></div>
+            <div class="controls__color" style="background-color: #a3e048"></div>
+            <div class="controls__color" style="background-color: #49da9a"></div>
+            <div class="controls__color" style="background-color: #34bbe6"></div>
+            <div class="controls__color" style="background-color: #4355db"></div>
+            <div class="controls__color" style="background-color: #d23be7"></div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
