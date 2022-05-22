@@ -1,5 +1,5 @@
 const canvas = document.getElementById("jsCanvas");
-const ctx = canvas.getContext('2d');
+const ctx = canvas.getContext("2d");
 
 canvas.width = 700;
 canvas.height = 700;
@@ -8,12 +8,12 @@ ctx.lineWidth = 2.5;
 
 let painting = false;
 
-function paintingStop() {
-    painting = false;
-}
-
 function paintingStart() {
     painting = true;
+}
+
+function paintingStop() {
+    painting = false;
 }
 
 function onMouseMove(event) {
@@ -28,13 +28,9 @@ function onMouseMove(event) {
     }
 }
 
-
-
-
-
 if (canvas) {
     canvas.addEventListener("mousemove", onMouseMove);
-    canvas.addEventListener("mouseup", paintingStop);
     canvas.addEventListener("mousedown", paintingStart);
+    canvas.addEventListener("mouseup", paintingStop);
     canvas.addEventListener("mouseleave", paintingStop);
 }
